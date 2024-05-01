@@ -17,6 +17,8 @@ import tempfile
 
 
 load_dotenv()
+REPLICATE_API_TOKEN = ${{secrets.REPLICATE_API_TOKEN}}
+
 
 
 

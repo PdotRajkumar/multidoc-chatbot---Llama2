@@ -19,6 +19,7 @@ import tempfile
 load_dotenv()
 
 
+
 def initialize_session_state():
     if 'history' not in st.session_state:
         st.session_state['history'] = []
@@ -58,6 +59,7 @@ def display_chat_history(chain):
 
 def create_conversational_chain(vector_store):
     load_dotenv()
+    REPLICATE_API_TOKEN = ${{secrets.REPLICATE_API_TOKEN}}
     # Create llm
     #llm = CTransformers(model="llama-2-7b-chat.ggmlv3.q4_0.bin",
                         #streaming=True, 

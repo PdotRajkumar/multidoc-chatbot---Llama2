@@ -18,7 +18,7 @@ import tempfile
 
 load_dotenv()
 
-REPLICATE_API_TOKEN : os.environ['REPLICATE_API_TOKEN']
+#REPLICATE_API_TOKEN : os.environ['REPLICATE_API_TOKEN']
 
 
 
@@ -62,7 +62,7 @@ def display_chat_history(chain):
 
 def create_conversational_chain(vector_store):
     load_dotenv()
-    REPLICATE_API_TOKEN : os.environ['REPLICATE_API_TOKEN']
+    #REPLICATE_API_TOKEN : os.environ['REPLICATE_API_TOKEN']
     # Create llm
     #llm = CTransformers(model="llama-2-7b-chat.ggmlv3.q4_0.bin",
                         #streaming=True, 
